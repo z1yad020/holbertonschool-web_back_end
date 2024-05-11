@@ -1,0 +1,2 @@
+// insert dic to `school`
+db.school.insertOne( { name: "Holberton school" } );
