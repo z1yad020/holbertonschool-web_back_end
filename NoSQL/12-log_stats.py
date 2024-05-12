@@ -15,7 +15,7 @@ if __name__ == "__main__":
     print('Methods:')
 
     for mt in ("GET", "POST", "PUT", "PATCH", "DELETE"):
-        print('\tMethod {}: {}'.format(mt,
+        print('\tmethod {}: {}'.format(mt,
               logs_ng.count_documents({'method': mt})))
 
     print('{} status check'.format(
