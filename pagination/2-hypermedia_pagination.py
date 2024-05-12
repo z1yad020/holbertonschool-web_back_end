@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
-
-"""
-Simple helper function
-"""
-
-
+"""Simple pagination"""
 import csv
 import math
-from typing import List, Dictionary
+from typing import List
+
+index_range = __import__('0-simple_helper_function').index_range
 
 
 class Server:
@@ -26,7 +23,6 @@ class Server:
                 reader = csv.reader(f)
                 dataset = [row for row in reader]
             self.__dataset = dataset[1:]
-
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
@@ -54,8 +50,3 @@ class Server:
             'prev_page': prev_page,
             'total_pages': total_pages
         }
-
-
-def index_range(page: int, page_size: int) -> tuple:
-    """index_range"""
-    return ((page - 1) * page_size, page * page_size)
