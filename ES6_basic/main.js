@@ -1,3 +1,3 @@
-import concatArrays from './5-spread-operator.js';
+import getBudgetObject from './7-getBudgetObject.js';
 
-console.log(concatArrays(['a', 'b'], ['c', 'd'], 'Hello'));
+console.log(getBudgetObject(400, 700, 900));
