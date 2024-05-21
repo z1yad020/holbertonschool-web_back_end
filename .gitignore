@@ -327,3 +327,9 @@ tags
 [._]*.un~
 
 # End of https://www.toptal.com/developers/gitignore/api/vim
+
+babel.config.js
+package.json
+utils.js
+.eslintrc.js
+package-lock.json
